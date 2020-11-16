@@ -1,0 +1,20 @@
+.FaceDownPile {
+    /* background-color: #abc; */
+    width: 10rem;
+    height: 16rem;
+    display: inline-block;
+    margin: 2.5rem;
+}
+
+.FaceDownPile .card-back {
+    /* background-color: brown; */
+    height: 90%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/66/Card_back_15.svg');
+    background-size: cover;
+    box-shadow: 1px 1px 5px #111;
+}
+
+.FaceDownPile .card-back img {
+    width: 4rem;
+    margin-top: 5rem;
+}

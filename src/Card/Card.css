@@ -1,0 +1,36 @@
+.Card.Problem {
+    background-color: lightcoral;
+}
+.Card.Practice {
+    background-color: lightGreen;
+}
+.Card.Solution {
+    background-color: lightBlue;
+}
+.Card.Value {
+    background-color: lightYellow;
+}
+.Card.Placeholder {
+    background-color: brown;
+}
+
+.Card.miniature-card {
+    width: 3.2rem;
+    height: 5rem;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.Card.face-up {
+    width: 10rem;
+    height: 17rem;
+    display: inline-block;
+    margin: 2.5rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px #111;
+}
+
+.Card.face-up .card-type {
+    margin-top: 85%;
+}
+

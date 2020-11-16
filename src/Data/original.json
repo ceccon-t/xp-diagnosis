@@ -1,0 +1,422 @@
+[
+    {
+        "type": "Value",
+        "description": "Simplicity"
+    },
+    {
+        "type": "Value",
+        "description": "Communication"
+    },
+    {
+        "type": "Value",
+        "description": "Feedback"
+    },
+    {
+        "type": "Value",
+        "description": "Courage"
+    },
+    {
+        "type": "Value",
+        "description": "Respect"
+    },
+    {
+        "type": "Problem",
+        "description": "The system contains too many defects"
+    },
+    {
+        "type": "Problem",
+        "description": "Stories are too complicated"
+    },
+    {
+        "type": "Problem",
+        "description": "Code has little test coverage"
+    },
+    {
+        "type": "Problem",
+        "description": "Team does not have essencial permissions on environments and tools"
+    },
+    {
+        "type": "Problem",
+        "description": "Code is bloated and or brittle"
+    },
+    {
+        "type": "Problem",
+        "description": "Team cannot or does not want to have an open work space"
+    },
+    {
+        "type": "Problem",
+        "description": "Programmers do not rotate specialized tasks"
+    },
+    {
+        "type": "Problem",
+        "description": "Tasks unfinished at end of iteration"
+    },
+    {
+        "type": "Problem",
+        "description": "Team velocity oscillates too much"
+    },
+    {
+        "type": "Problem",
+        "description": "Programmers do not have the details of the stories"
+    },
+    {
+        "type": "Problem",
+        "description": "Customer does not help to test the system"
+    },
+    {
+        "type": "Problem",
+        "description": "Programmers have little contact with customer"
+    },
+    {
+        "type": "Problem",
+        "description": "Daily stand-ups take too long or do not exist"
+    },
+    {
+        "type": "Problem",
+        "description": "Team members contradict one another"
+    },
+    {
+        "type": "Problem",
+        "description": "Team does not tackle known problems"
+    },
+    {
+        "type": "Problem",
+        "description": "Team is asked to produce much more than their capacity"
+    },
+    {
+        "type": "Problem",
+        "description": "Coach solves the most challenging technical tasks"
+    },
+    {
+        "type": "Problem",
+        "description": "Customer proxy does not understand customer needs"
+    },
+    {
+        "type": "Problem",
+        "description": "Tests take too long to run"
+    },
+    {
+        "type": "Problem",
+        "description": "Complexity gets in the way of simple solutions"
+    },
+    {
+        "type": "Problem",
+        "description": "Pair programming generates confusion"
+    },
+    {
+        "type": "Problem",
+        "description": "Duplicated code causes many defects"
+    },
+    {
+        "type": "Problem",
+        "description": "Team has several coding styles"
+    },
+    {
+        "type": "Problem",
+        "description": "Programmers do not know best practices"
+    },
+    {
+        "type": "Problem",
+        "description": "Integration takes too long"
+    },
+    {
+        "type": "Problem",
+        "description": "Code is hard to understand"
+    },
+    {
+        "type": "Problem",
+        "description": "Team abandons practices under pressure"
+    },
+    {
+        "type": "Problem",
+        "description": "Team finishes tasks but does not refactor"
+    },
+    {
+        "type": "Problem",
+        "description": "Programmers do not go along with their pairs"
+    },
+    {
+        "type": "Problem",
+        "description": "Solo programmers introduce defects and badly written code"
+    },
+    {
+        "type": "Problem",
+        "description": "Tests do not run before integration"
+    },
+    {
+        "type": "Problem",
+        "description": "Code has more features than necessary"
+    },
+    {
+        "type": "Problem",
+        "description": "Team does not write tests"
+    },
+    {
+        "type": "Problem",
+        "description": "Delivering on time is not common"
+    },
+    {
+        "type": "Problem",
+        "description": "Team finds technological challenges too risky"
+    },
+    {
+        "type": "Problem",
+        "description": "Team produces few acceptance tests"
+    },
+    {
+        "type": "Problem",
+        "description": "Code is delivered with failing tests"
+    },
+    {
+        "type": "Solution",
+        "description": "Pass stories to next iteration"
+    },
+    {
+        "type": "Solution",
+        "description": "Programmers discuss stories with customer or customer proxy"
+    },
+    {
+        "type": "Solution",
+        "description": "Break stories"
+    },
+    {
+        "type": "Solution",
+        "description": "Have sustainable pace"
+    },
+    {
+        "type": "Solution",
+        "description": "Temporarily suspend practices to deliver on time"
+    },
+    {
+        "type": "Solution",
+        "description": "Legible tests make executable documentation"
+    },
+    {
+        "type": "Solution",
+        "description": "Automate acceptance tests and make them easier to write"
+    },
+    {
+        "type": "Solution",
+        "description": "Have customer on site"
+    },
+    {
+        "type": "Solution",
+        "description": "Simplify stories"
+    },
+    {
+        "type": "Solution",
+        "description": "Tackle technical risks early on"
+    },
+    {
+        "type": "Solution",
+        "description": "Self-documenting code"
+    },
+    {
+        "type": "Solution",
+        "description": "Identify how technical stories deliver value"
+    },
+    {
+        "type": "Solution",
+        "description": "Coach allows team to tackle challenges"
+    },
+    {
+        "type": "Solution",
+        "description": "Consider the simplest that could work"
+    },
+    {
+        "type": "Solution",
+        "description": "Standardize coding styles"
+    },
+    {
+        "type": "Solution",
+        "description": "Create or update delivery plan"
+    },
+    {
+        "type": "Solution",
+        "description": "Make small deliveries"
+    },
+    {
+        "type": "Solution",
+        "description": "Have simple projects"
+    },
+    {
+        "type": "Solution",
+        "description": "Customers speak through an unique voice"
+    },
+    {
+        "type": "Solution",
+        "description": "Every test must pass before delivering code"
+    },
+    {
+        "type": "Solution",
+        "description": "Make tests run faster"
+    },
+    {
+        "type": "Solution",
+        "description": "Refactor without mercy"
+    },
+    {
+        "type": "Solution",
+        "description": "Have a cohesive team"
+    },
+    {
+        "type": "Solution",
+        "description": "Have continuous integration"
+    },
+    {
+        "type": "Solution",
+        "description": "Have continuous learning"
+    },
+    {
+        "type": "Solution",
+        "description": "Have daily stand-ups"
+    },
+    {
+        "type": "Solution",
+        "description": "Helping when noticing a problem"
+    },
+    {
+        "type": "Solution",
+        "description": "Make automated tests to reproduce and fix defects"
+    },
+    {
+        "type": "Solution",
+        "description": "Emergent project"
+    },
+    {
+        "type": "Solution",
+        "description": "Pair programming and constantly changing pairs"
+    },
+    {
+        "type": "Solution",
+        "description": "Test-Driven Development"
+    },
+    {
+        "type": "Solution",
+        "description": "Spike"
+    },
+    {
+        "type": "Solution",
+        "description": "YAGNI"
+    },
+    {
+        "type": "Solution",
+        "description": "Open work space"
+    },
+    {
+        "type": "Solution",
+        "description": "Have a complete local development environment"
+    },
+    {
+        "type": "Solution",
+        "description": "Have collective code ownership"
+    },
+    {
+        "type": "Solution",
+        "description": "Improve estimates"
+    },
+    {
+        "type": "Solution",
+        "description": "Test anything that could break"
+    },
+    {
+        "type": "Solution",
+        "description": "Plan deliveries or iterations"
+    },
+    {
+        "type": "Practice",
+        "description": "Sit together: Develop in an open space big enough for the whole team"
+    },
+    {
+        "type": "Practice",
+        "description": "Whole team: Include on the team people with all the skills and perspectives necessary for the project to succeed"
+    },
+    {
+        "type": "Practice",
+        "description": "Informative workspace: Make your workspace about your work. An interested observer shoudl be able to walk into the team space and get a general idea of how the project is going"
+    },
+    {
+        "type": "Practice",
+        "description": "Energized work: Software development is a game of insight, and insight comes to the prepared, rested, relaxed mind"
+    },
+    {
+        "type": "Practice",
+        "description": "Pair programming: keep each other on task, brainstorm refinements, clarify ideas"
+    },
+    {
+        "type": "Practice",
+        "description": "Stories: Plan using units of customer-visible functionality"
+    },
+    {
+        "type": "Practice",
+        "description": "Weekly Cycle: Plan work a week at a time. The goal is to have deployable software at the end of the week which everyone can celebrate as progress"
+    },
+    {
+        "type": "Practice",
+        "description": "Quarterly Cycle: Plan work a quarter at a time. Once a quarter reflect on the team, the project, its progress, and its alignment with larger goals"
+    },
+    {
+        "type": "Practice",
+        "description": "Slack: In any plan, include some minor tasks that can be dropped if you get behind. Leave space to guarantee your main commitments"
+    },
+    {
+        "type": "Practice",
+        "description": "Ten-minute build: Automatically build the whole system and run all of the tests in ten minutes."
+    },
+    {
+        "type": "Practice",
+        "description": "Continuous integration: Integrate and test changes after no more than a couple of hours. The longer you wait to integrate, the more it costs and the more unpredictable the cost becomes. Continuous integration should be complete enough that the eventual first deployment of the system is no big deal"
+    },
+    {
+        "type": "Practice",
+        "description": "Test-first programming: Write a failing automated test before changing any code"
+    },
+    {
+        "type": "Practice",
+        "description": "Incremental design: Invest in the design of the system every day. XP teams are confident in their ability to adapt the design to future requirements. Because of this, XP teams can meet their human need for immediate and frequent success as well as their economic need to defer investment to the last responsible moment"
+    },
+    {
+        "type": "Practice",
+        "description": "Real customer involvement: Make people whose lives and business are affected by your system part of the team"
+    },
+    {
+        "type": "Practice",
+        "description": "Incremental deployment: When replacing a legacy system, gradually take over its workload beginning very early in the project. Big deployments have a high risk and high human and economic costs"
+    },
+    {
+        "type": "Practice",
+        "description": "Team continuity: Keep effective teams together. Value in software is created not just by what people know and do but also by their relationships and what they accomplish together. Ignoring the value of relationships and trust just to simplify the scheduling problem is false economy"
+    },
+    {
+        "type": "Practice",
+        "description": "Shrinking teams: As a team grows in capability, keep its workload constant but gradually reduce its size"
+    },
+    {
+        "type": "Practice",
+        "description": "Root-cause analysis: Every time a defect is found after development, eliminate the defect and its cause. The goal is not just that this one defect won't ever recur, but that the team will never make the same kind of mistake again. Always ask Why 5 times. After Five Whys, you find the problem lying at the heart of the defect"
+    },
+    {
+        "type": "Practice",
+        "description": "Shared code: Anyone on the team can improve any part of the system at any time. Team members can collectively assume responsibility not just for the quality of what they deliver to users but also for the pride they take in their work along the way"
+    },
+    {
+        "type": "Practice",
+        "description": "Code and tests: Maintain only the code and the tests as permanent artifacts. Generate other documents from the code and tests. Rely on social mechanisms to keep alive important history of the project. Customers pay for the what the system does today and what the team can make the system do tomorrow"
+    },
+    {
+        "type": "Practice",
+        "description": "Single code base: There is only one code stream. You can have the build system create several products from a single code base. You can move the variation into configuration files. Whatever you have to do, improve your process until you no longer need multiple versions of the code"
+    },
+    {
+        "type": "Practice",
+        "description": "Daily deployment: Put new software into production every night. A programmer out of sync with the deployed software risks making decisions without getting accurate feedback about those decisions"
+    },
+    {
+        "type": "Practice",
+        "description": "Negotiated scope contract: Write contracts for software development that fix time, costs, and quality but call for an ongoing negotiation of the precise scope of the system. Negotiated scope contracts are a mechanism for aligning the interests of suppliers and customers to encourage communication and feedback"
+    },
+    {
+        "type": "Practice",
+        "description": "Pay-per-use: Charge for every time the system is used. Pay-per-release opposes the supplier's interests and the customer's interests. The supplier is selfishly motivated to have lots of releases, each containing the least possible functionality necessary to get the customers to pay. The customer wants fewer releases (because of the pain of upgrading), each containing lots of features. The tension between the two sets of interests reduces communication and feedback"
+    }
+]
