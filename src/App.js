@@ -76,7 +76,6 @@ class App extends Component {
     decks.forEach((deck) => {
       deck.cards.sort(() => .5 - Math.random());
     });
-    console.log(decks);
 
     // put position within deck in cards
     decks.forEach((deck) => {
@@ -94,7 +93,6 @@ class App extends Component {
         types[card.type].cards.push(card);
       });
     })
-    console.log(types);
 
     // save new state
     this.setState(
@@ -106,7 +104,6 @@ class App extends Component {
         selectedCard: this.DUMMY_CARD
       }
      );
-    console.log(this.state.allCards);
   }
 
   getInitialCards = () => {
