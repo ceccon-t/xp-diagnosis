@@ -141,7 +141,7 @@ class App extends Component {
     let message = "No more cards here!";
 
     if (!this.hasRemainingCards()) {
-      message += "\n\nClick 'New Game' to shuffle."
+      message += "\n\nClick 'New Game' (bottom of the page) to shuffle."
     }
 
     alert(message);
