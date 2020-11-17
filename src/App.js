@@ -196,9 +196,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="NewGameButtonWrapper">
-          <NewGameButton onClick={() => this.newGameHandler()} />
-        </div>
+        <h1>XP Diagnosis</h1>
         {this.state.decks.map((deck, pos) => {
           return <FaceDownPile 
                     displayImage={deck.image} 
@@ -217,6 +215,9 @@ class App extends Component {
         <div className="SelectedCardArea">
           <hr />
           <SelectedCard style={styles} cardType={this.state.selectedCard.type} cardDescription={this.state.selectedCard.description}/>
+        </div>
+        <div className="NewGameButtonWrapper">
+          <NewGameButton onClick={() => this.newGameHandler()} />
         </div>
       </div>
     );
