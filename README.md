@@ -1,3 +1,23 @@
+# Project 
+XP Diagnosis is a card game designed to assess a team's understanding and adoption of Agile values and eXtreme Programming practices. The main goal being to generate a healthy discussion between all members of the team about a series of topics, picked up mostly at random.
+
+There are four types of cards: Practices, Problems, Solutions and Values. Each card contains a short description - some times just a word, some times a small paragraph - that relates to some aspect of software development.
+
+Once a new game is started, the cards are randomly distributed across four decks. Team members then proceed to, one at a time, pick a deck to reveal its topmost card and the team discusses how that topic is present in their daily work, how good the team is doing with regards to that, possibilities of improvements, so on. Depending on the type of the card, the focus of the discussion might change. Instead of choosing a deck to have a random card, team members can also choose to pick a specific card type, and then a random card of that type (if any are still in play) will be chosen and drawn from its deck, instead.
+
+The game can be used in a meeting facilitated by a Scrum Master, Agile Coach, or someone else with deep knowledge of Agile and XP, who can explain the topics and answer questions as they appear.
+
+The topics present in the cards are heavily inspired by Kent Beck's excellent book "Extreme Programming Explained". Knowledge of that book by the facilitator is recommended.
+
+# How to play online
+At the moment, a version of the game is hosted [here](http://xp-diagnosis.herokuapp.com/). It is configured in heroku to always be up-to-date with the "master" branch of this repository.
+
+# How to install and run locally
+After cloning this repository and assuming you have npm installed, go to the root folder of the repo and run `npm install` to install all dependencies (first time only), and `npm start` to start a development server. You will be able to find the page at localhost:3000.
+
+More info can be found in the "Create React App Stuff" session below.
+
+# Create React App Stuff
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -12,11 +32,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br />
@@ -26,43 +41,3 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
