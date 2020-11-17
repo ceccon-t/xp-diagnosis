@@ -129,13 +129,34 @@ class App extends Component {
     return remaining;
   }
 
+  hasRemainingCards = () => {
+    let deck_one = this.state.decks[0];
+    let deck_two = this.state.decks[1];
+    let deck_three = this.state.decks[2];
+    let deck_four = this.state.decks[3];
+    return this.getRemainingAvailableCardsInList(deck_one.cards) != 0
+            || this.getRemainingAvailableCardsInList(deck_two.cards) != 0
+            || this.getRemainingAvailableCardsInList(deck_three.cards) != 0
+            || this.getRemainingAvailableCardsInList(deck_four.cards) != 0;
+  }
+
+  showEmptyAlert = () => {
+    let message = "No more cards here!";
+
+    if (!this.hasRemainingCards()) {
+      message += "\n\nClick 'New Game' to shuffle."
+    }
+
+    alert(message);
+  }
+
   pickNextFromDeck = (deckNumber) => {
     console.log("Picking next from deck " + deckNumber);
     let decks = this.state.decks;
     let deck = decks[deckNumber];
     let remainingAvailable = deck.cards.filter(card => card.available == 1);
     if (remainingAvailable.length == 0) {
-      alert("Empty!");
+      this.showEmptyAlert();
       return;
     }
     let pickedCard = remainingAvailable[0];
@@ -156,7 +177,7 @@ class App extends Component {
     let types = this.state.types;
     let remainingAvailable = types[type].cards.filter(card => card.available == 1);
     if (remainingAvailable.length == 0) {
-      alert("Empty!");
+      this.showEmptyAlert();
       return;
     }
     let pickedCard = remainingAvailable[0];
