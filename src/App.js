@@ -148,6 +148,23 @@ class App extends Component {
     alert(message);
   }
 
+  generateNextActionMessage = (status) => {
+    let nextActionMessage = "";
+
+    if (status.playing) {
+      let hasSelectedCard = this.state.selectedCard !== this.DUMMY_CARD;
+      if (hasSelectedCard) {
+        nextActionMessage = "Discuss and then pick next card";
+      } else {
+        nextActionMessage = "Pick a card";
+      }
+    } else {
+      nextActionMessage = "Click 'New Game' to set things up";
+    }
+
+    return nextActionMessage;
+  }
+
   pickNextFromDeck = (deckNumber) => {
     console.log("Picking next from deck " + deckNumber);
     let decks = this.state.decks;
@@ -199,19 +216,9 @@ class App extends Component {
       display: 'inline-block'
     };
 
-    let playing = this.hasRemainingCards();
-    let nextActionMessage = "";
-
-    if (playing) {
-      let hasSelectedCard = this.state.selectedCard !== this.DUMMY_CARD;
-      if (hasSelectedCard) {
-        nextActionMessage = "Discuss and then pick next card";
-      } else {
-        nextActionMessage = "Pick a card";
-      }
-    } else {
-      nextActionMessage = "Click 'New Game' to set things up";
-    }
+    let nextActionMessage = this.generateNextActionMessage({
+      playing: this.hasRemainingCards()
+    });
 
     return (
       <div className="App">
