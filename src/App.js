@@ -114,7 +114,7 @@ class App extends Component {
   generateAllCards = () => {
     let cards = this.getInitialCards();
     cards = cards.map(card => {
-      return {...card, available: 1, deck: 0, posInDeck: 0, posInTypes: 0};
+      return {...card, available: true, deck: 0, posInDeck: 0, posInTypes: 0};
     })
     // this.setState({allCards: cards});
     return cards;
@@ -123,7 +123,7 @@ class App extends Component {
   getRemainingAvailableCardsInList = (cards) => {
     //let remaining = 13;
     // iterate
-    let remaining = cards.filter(card => card.available == 1).length;
+    let remaining = cards.filter(card => card.available).length;
     return remaining;
   }
 
@@ -132,10 +132,10 @@ class App extends Component {
     let deck_two = this.state.decks[1];
     let deck_three = this.state.decks[2];
     let deck_four = this.state.decks[3];
-    return this.getRemainingAvailableCardsInList(deck_one.cards) != 0
-            || this.getRemainingAvailableCardsInList(deck_two.cards) != 0
-            || this.getRemainingAvailableCardsInList(deck_three.cards) != 0
-            || this.getRemainingAvailableCardsInList(deck_four.cards) != 0;
+    return this.getRemainingAvailableCardsInList(deck_one.cards) !== 0
+            || this.getRemainingAvailableCardsInList(deck_two.cards) !== 0
+            || this.getRemainingAvailableCardsInList(deck_three.cards) !== 0
+            || this.getRemainingAvailableCardsInList(deck_four.cards) !== 0;
   }
 
   showEmptyAlert = () => {
@@ -182,7 +182,7 @@ class App extends Component {
       this.showEmptyAlert();
       return;
     }
-    
+
     pickedCard.available = false;
 
     let types = this.state.types;
