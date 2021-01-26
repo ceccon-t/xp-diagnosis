@@ -116,13 +116,10 @@ class App extends Component {
     cards = cards.map(card => {
       return {...card, available: true, deck: 0, posInDeck: 0, posInTypes: 0};
     })
-    // this.setState({allCards: cards});
     return cards;
   }
 
   getRemainingAvailableCardsInList = (cards) => {
-    //let remaining = 13;
-    // iterate
     let remaining = cards.filter(card => card.available).length;
     return remaining;
   }
