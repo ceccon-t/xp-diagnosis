@@ -199,6 +199,20 @@ class App extends Component {
       display: 'inline-block'
     };
 
+    let playing = this.hasRemainingCards();
+    let nextActionMessage = "";
+
+    if (playing) {
+      let hasSelectedCard = this.state.selectedCard !== this.DUMMY_CARD;
+      if (hasSelectedCard) {
+        nextActionMessage = "Discuss and then pick next card";
+      } else {
+        nextActionMessage = "Pick a card";
+      }
+    } else {
+      nextActionMessage = "Click 'New Game' to set things up";
+    }
+
     return (
       <div className="App">
 
@@ -230,6 +244,11 @@ class App extends Component {
         <div className="NewGameButtonWrapper">
           <NewGameButton onClick={() => this.newGameHandler()} />
         </div>
+
+        <span className="NextActionHint">
+          Hint: {nextActionMessage}
+        </span>
+
       </div>
     );
   }

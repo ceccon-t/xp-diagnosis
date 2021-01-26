@@ -11,6 +11,17 @@ body {
   margin-top: 1.5rem;
 }
 
+.NextActionHint {
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+
+  cursor: default;
+
+  font-size: 0.8rem;
+  color: #567;
+}
+
 .App {
   text-align: center;
 }
