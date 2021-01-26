@@ -165,50 +165,77 @@ class App extends Component {
     return nextActionMessage;
   }
 
-  pickNextFromDeck = (deckNumber) => {
-    console.log("Picking next from deck " + deckNumber);
-    let decks = this.state.decks;
-    let deck = decks[deckNumber];
-    /* todo: abstract this to a new method to reuse here and on pickNextFromType */
-    let remainingAvailable = deck.cards.filter(card => card.available == 1);
+  drawNextAvailable = (cards) => {
+    let remainingAvailable = cards.filter(card => card.available);
     if (remainingAvailable.length == 0) {
       this.showEmptyAlert();
       return;
     }
     let pickedCard = remainingAvailable[0];
-    pickedCard.available = 0;
+    pickedCard.available = false;
+
     let types = this.state.types;
-    types[pickedCard.type].cards[pickedCard.posInTypes] = pickedCard;
-    deck[pickedCard.posInDeck] = pickedCard;
-    decks[deckNumber] = deck;
+    let decks = this.state.decks;
+
+    let type = pickedCard.type;
+    let deck = pickedCard.deck;
+
+    types[type].cards[pickedCard.posInTypes] = pickedCard;
+    decks[deck].cards[pickedCard.posInDeck] = pickedCard;
+
     this.setState({
       selectedCard: pickedCard,
       decks: decks,
       types: types
     });
+  }
+
+  pickNextFromDeck = (deckNumber) => {
+    console.log("Picking next from deck " + deckNumber);
+    let decks = this.state.decks;
+    let deck = decks[deckNumber];
+    /* todo: abstract this to a new method to reuse here and on pickNextFromType */
+    // let remainingAvailable = deck.cards.filter(card => card.available == 1);
+    // if (remainingAvailable.length == 0) {
+    //   this.showEmptyAlert();
+    //   return;
+    // }
+    // let pickedCard = remainingAvailable[0];
+    // pickedCard.available = 0;
+    // let types = this.state.types;
+    // types[pickedCard.type].cards[pickedCard.posInTypes] = pickedCard;
+    // deck[pickedCard.posInDeck] = pickedCard;
+    // decks[deckNumber] = deck;
+    // this.setState({
+    //   selectedCard: pickedCard,
+    //   decks: decks,
+    //   types: types
+    // });
     /* end todo */
+    this.drawNextAvailable(deck.cards);
   }
   
   pickNextFromType = (type) => {
     console.log("Picking next from type " + type);
     let types = this.state.types;
     /* todo: abstract this to a new method to reuse here and on pickNextFromDeck */
-    let remainingAvailable = types[type].cards.filter(card => card.available == 1);
-    if (remainingAvailable.length == 0) {
-      this.showEmptyAlert();
-      return;
-    }
-    let pickedCard = remainingAvailable[0];
-    pickedCard.available = 0;
-    types[type].cards[pickedCard.posInTypes] = pickedCard;
-    let decks = this.state.decks;
-    decks[pickedCard.deck].cards[pickedCard.posInDeck] = pickedCard;
-    this.setState({
-      selectedCard: pickedCard,
-      decks: decks,
-      types: types
-    });
+    // let remainingAvailable = types[type].cards.filter(card => card.available == 1);
+    // if (remainingAvailable.length == 0) {
+    //   this.showEmptyAlert();
+    //   return;
+    // }
+    // let pickedCard = remainingAvailable[0];
+    // pickedCard.available = 0;
+    // types[type].cards[pickedCard.posInTypes] = pickedCard;
+    // let decks = this.state.decks;
+    // decks[pickedCard.deck].cards[pickedCard.posInDeck] = pickedCard;
+    // this.setState({
+    //   selectedCard: pickedCard,
+    //   decks: decks,
+    //   types: types
+    // });
     /* end todo */
+    this.drawNextAvailable(types[type].cards);
   }
 
   render() {
