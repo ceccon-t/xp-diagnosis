@@ -165,13 +165,24 @@ class App extends Component {
     return nextActionMessage;
   }
 
-  drawNextAvailable = (cards) => {
+  findNextAvailable = (cards) => {
+    let nextAvailable = null;
+
     let remainingAvailable = cards.filter(card => card.available);
-    if (remainingAvailable.length == 0) {
+    if (remainingAvailable.length !== 0) {
+      nextAvailable = remainingAvailable[0];
+    }
+
+    return nextAvailable;
+  }
+
+  drawNextAvailable = (cards) => {
+    let pickedCard = this.findNextAvailable(cards);
+    if (pickedCard === null) {
       this.showEmptyAlert();
       return;
     }
-    let pickedCard = remainingAvailable[0];
+    
     pickedCard.available = false;
 
     let types = this.state.types;
