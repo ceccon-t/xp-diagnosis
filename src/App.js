@@ -13,6 +13,7 @@ class App extends Component {
   DECK_TWO_IMG = this.REACT_IMG;
   DECK_THREE_IMG = this.REACT_IMG;
   DECK_FOUR_IMG = this.REACT_IMG;
+  // todo: rename this
   DUMMY_CARD = {
     type: "Placeholder",
     description: ""
@@ -151,6 +152,7 @@ class App extends Component {
     console.log("Picking next from deck " + deckNumber);
     let decks = this.state.decks;
     let deck = decks[deckNumber];
+    /* todo: abstract this to a new method to reuse here and on pickNextFromType */
     let remainingAvailable = deck.cards.filter(card => card.available == 1);
     if (remainingAvailable.length == 0) {
       this.showEmptyAlert();
@@ -167,11 +169,13 @@ class App extends Component {
       decks: decks,
       types: types
     });
+    /* end todo */
   }
   
   pickNextFromType = (type) => {
     console.log("Picking next from type " + type);
     let types = this.state.types;
+    /* todo: abstract this to a new method to reuse here and on pickNextFromDeck */
     let remainingAvailable = types[type].cards.filter(card => card.available == 1);
     if (remainingAvailable.length == 0) {
       this.showEmptyAlert();
@@ -187,6 +191,7 @@ class App extends Component {
       decks: decks,
       types: types
     });
+    /* end todo */
   }
 
   render() {
@@ -215,7 +220,7 @@ class App extends Component {
                       pick={() => this.pickNextFromType(type)}
                       />
         })}
-        
+
         <hr />
         
         <div className="SelectedCardArea">
