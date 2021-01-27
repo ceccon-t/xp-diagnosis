@@ -1,9 +1,9 @@
 .InstructionsModal {
     position: fixed;
     box-sizing: border-box;
-    width: 70vw;
-    left: 15vw;
-    top: 10%;
+    width: 80vw;
+    left: 10vw;
+    top: 5%;
 
     padding: 2rem;
     
@@ -13,6 +13,10 @@
     text-align: center;
 }
 
+.InstructionsModal p {
+    text-align: justify;
+}
+
 .InstructionsModal .BtnCloseInstructions {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
