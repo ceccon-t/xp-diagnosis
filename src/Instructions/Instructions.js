@@ -7,17 +7,15 @@ const Instructions = () => {
 
     const [displayingInstructions, setDisplayingInstructions] = useState(true);
 
-    let instructions = null;
-
-    let hideInstructions = () => {
+    const hideInstructions = () => {
         setDisplayingInstructions(false);
     }
 
-    let showInstructions = () => {
+    const showInstructions = () => {
         setDisplayingInstructions(true);
     }
 
-    let generateInstructionsDisplay = () => {
+    const generateInstructionsDisplay = () => {
         return(
             <div>
                 <Backdrop closeCallback={hideInstructions} />
@@ -26,10 +24,10 @@ const Instructions = () => {
         );
     }
 
+    let instructions;
+
     if (displayingInstructions) {
         instructions = generateInstructionsDisplay();
-    } else {
-        instructions = null;
     }
 
     return (
