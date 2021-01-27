@@ -1,0 +1,18 @@
+.InstructionsModal {
+    position: fixed;
+    box-sizing: border-box;
+    width: 70vw;
+    left: 15vw;
+    top: 10%;
+
+    padding: 2rem;
+    
+    background-color: white;
+    margin: auto;
+
+    text-align: center;
+}
+
+.InstructionsModal .BtnCloseInstructions {
+    margin-top: 5rem;
+}

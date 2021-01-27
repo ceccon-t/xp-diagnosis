@@ -9,6 +9,15 @@
     border: none;
     border-radius: 100%;
     box-shadow: 2px 2px 4px black;
-    
+
     cursor: pointer;
+}
+
+.Backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
 }
