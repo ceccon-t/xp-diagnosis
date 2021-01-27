@@ -5,6 +5,7 @@ import FaceDownPile from './FaceDownPile/FaceDownPile';
 import SelectedCard from './Card/SelectedCard';
 import originalCards from './Data/original.json';
 import CardTypeSummary from './Card/CardTypeSummary';
+import Instructions from './Instructions/Instructions';
 
 class App extends Component {
 
@@ -254,6 +255,10 @@ class App extends Component {
         <span className="NextActionHint">
           Hint: {nextActionMessage}
         </span>
+
+        <div className="InstructionsOpener">
+          <Instructions />
+        </div>
 
       </div>
     );

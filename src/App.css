@@ -22,6 +22,12 @@ body {
   color: #567;
 }
 
+.InstructionsOpener {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+
 .App {
   text-align: center;
 }
