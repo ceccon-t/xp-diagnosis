@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Backdrop from './Backdrop';
 import InstructionsModal from './InstructionsModal';
 import './Instructions.css';
 
@@ -19,7 +20,7 @@ const Instructions = () => {
     let generateInstructionsDisplay = () => {
         return(
             <div>
-                <div className="Backdrop" onClick={hideInstructions}></div>
+                <Backdrop closeCallback={hideInstructions} />
                 <InstructionsModal closeCallback={hideInstructions} />
             </div>
         );
