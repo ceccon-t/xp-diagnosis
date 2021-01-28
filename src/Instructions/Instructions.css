@@ -12,3 +12,7 @@
 
     cursor: pointer;
 }
+
+.InstructionsOpenerButton:focus {
+    outline: none;
+}
