@@ -14,7 +14,7 @@ const CardTypeSummary = (props) => {
     }
 
     return(
-        <div onClick={props.pick} className="CardTypeSummary">
+        <div onClick={props.pick} className="CardTypeSummary" title={"Pick a " + props.cardType + " card"}>
             <GenericMiniatureCard cardType={props.cardType} style={styles} /> <br />
             <p style={textStyle}>{props.cardType}</p>
             {/* <p style={textStyle}>{props.remaining}</p> */}
