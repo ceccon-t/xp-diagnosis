@@ -173,25 +173,25 @@ class App extends Component {
   }
 
   drawNextAvailable = (cards) => {
-    let pickedCard = this.findNextAvailable(cards);
-    if (pickedCard === null) {
+    let drawnCard = this.findNextAvailable(cards);
+    if (drawnCard === null) {
       this.showEmptyAlert();
       return;
     }
 
-    pickedCard.available = false;
+    drawnCard.available = false;
 
     let types = this.state.types;
     let decks = this.state.decks;
 
-    let type = pickedCard.type;
-    let deck = pickedCard.deck;
+    let type = drawnCard.type;
+    let deck = drawnCard.deck;
 
-    types[type].cards[pickedCard.posInTypes] = pickedCard;
-    decks[deck].cards[pickedCard.posInDeck] = pickedCard;
+    types[type].cards[drawnCard.posInTypes] = drawnCard;
+    decks[deck].cards[drawnCard.posInDeck] = drawnCard;
 
     this.setState({
-      selectedCard: pickedCard,
+      selectedCard: drawnCard,
       decks: decks,
       types: types
     });
