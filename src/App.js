@@ -193,7 +193,8 @@ class App extends Component {
     this.setState({
       selectedCard: drawnCard,
       decks: decks,
-      types: types
+      types: types,
+      playing: this.hasRemainingCards()
     });
   }
 
@@ -215,7 +216,7 @@ class App extends Component {
     };
 
     let nextActionMessage = this.generateNextActionMessage({
-      playing: this.hasRemainingCards()
+      playing: this.state.playing
     });
 
     return (
