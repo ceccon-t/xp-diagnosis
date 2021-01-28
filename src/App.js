@@ -15,7 +15,7 @@ class App extends Component {
   DECK_THREE_IMG = this.REACT_IMG;
   DECK_FOUR_IMG = this.REACT_IMG;
   // todo: rename this
-  DUMMY_CARD = {
+  PLACEHOLDER_CARD = {
     type: "Placeholder",
     description: ""
   }
@@ -24,7 +24,7 @@ class App extends Component {
     dummy: "initial state",
     playing: false,
     allCards: [],
-    selectedCard: this.DUMMY_CARD,
+    selectedCard: this.PLACEHOLDER_CARD,
     decks: [
       {image: this.DECK_ONE_IMG, cards: []},
       {image: this.DECK_THREE_IMG, cards: []},
@@ -103,7 +103,7 @@ class App extends Component {
         decks: decks,
         types: types,
         playing: true,
-        selectedCard: this.DUMMY_CARD
+        selectedCard: this.PLACEHOLDER_CARD
       }
      );
   }
@@ -150,7 +150,7 @@ class App extends Component {
     let nextActionMessage = "";
 
     if (status.playing) {
-      let hasSelectedCard = this.state.selectedCard !== this.DUMMY_CARD;
+      let hasSelectedCard = this.state.selectedCard !== this.PLACEHOLDER_CARD;
       if (hasSelectedCard) {
         nextActionMessage = "Discuss and then pick next card";
       } else {
