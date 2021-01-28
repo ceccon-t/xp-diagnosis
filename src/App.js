@@ -244,7 +244,7 @@ class App extends Component {
 
         <hr />
         
-        <div className="SelectedCardArea">
+        <div className="SelectedCardWrapper">
           <SelectedCard style={styles} cardType={this.state.selectedCard.type} cardDescription={this.state.selectedCard.description}/>
         </div>
         
@@ -256,7 +256,7 @@ class App extends Component {
           Hint: {nextActionMessage}
         </span>
 
-        <div className="InstructionsOpener">
+        <div className="InstructionsOpenerWrapper">
           <Instructions />
         </div>
 

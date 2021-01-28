@@ -7,7 +7,7 @@ body {
   margin-top: 2.5rem;
 }
 
-.SelectedCardArea {
+.SelectedCardWrapper {
   margin-top: 1.5rem;
 }
 
@@ -22,7 +22,7 @@ body {
   color: #567;
 }
 
-.InstructionsOpener {
+.InstructionsOpenerWrapper {
   position: fixed;
   bottom: 3%;
   right: 3%;
