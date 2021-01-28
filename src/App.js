@@ -21,7 +21,6 @@ class App extends Component {
   }
 
   state = {
-    dummy: "initial state",
     playing: false,
     allCards: [],
     selectedCard: this.PLACEHOLDER_CARD,
