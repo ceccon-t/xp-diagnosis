@@ -14,7 +14,6 @@ class App extends Component {
   DECK_TWO_IMG = this.REACT_IMG;
   DECK_THREE_IMG = this.REACT_IMG;
   DECK_FOUR_IMG = this.REACT_IMG;
-  // todo: rename this
   PLACEHOLDER_CARD = {
     type: "Placeholder",
     description: ""
