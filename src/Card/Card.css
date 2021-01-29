@@ -11,7 +11,8 @@
     background-color: lightYellow;
 }
 .Card.Placeholder {
-    background-color: black;
+    background-color: rgb(186, 223, 186);
+    font-size: 0;
 }
 
 .Card.miniature-card {
@@ -28,6 +29,7 @@
     margin: 2.5rem;
     border: 1px solid black;
     box-shadow: 1px 1px 5px #111;
+    outline: double;
 }
 
 .Card.face-up .card-type {
