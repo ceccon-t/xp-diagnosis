@@ -19,7 +19,7 @@ body {
   cursor: default;
 
   font-size: 0.8rem;
-  color: #567;
+  /* color: #567; */
   color: rgb(2, 90, 2);
 }
 
