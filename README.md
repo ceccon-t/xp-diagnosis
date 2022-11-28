@@ -10,7 +10,7 @@ The game can be used in a meeting facilitated by a Scrum Master, Agile Coach, or
 The topics present in the cards are heavily inspired by Kent Beck's excellent book "Extreme Programming Explained". Knowledge of that book by the facilitator is recommended.
 
 # How to play online
-At the moment, a version of the game is hosted [here](http://xp-diagnosis.herokuapp.com/). It is configured in heroku to always be up-to-date with the "master" branch of this repository.
+At the moment, a version of the game is hosted [here](https://xp-diagnosis.onrender.com/). It is configured to always be up-to-date with the "main" branch of this repository.
 
 # How to install and run locally
 After cloning this repository and assuming you have npm installed, go to the root folder of the repo and run `npm install` to install all dependencies (first time only), and `npm start` to start a development server. You will be able to find the page at localhost:3000.
